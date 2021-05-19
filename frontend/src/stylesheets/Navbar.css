@@ -1,0 +1,327 @@
+.Navbar {
+    background: #2A3142;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.Navbar::-webkit-scrollbar {
+    display: none;
+}
+
+.Nav {
+    height: 100%;
+}
+
+.NavMenu {
+    list-style: none;
+    font-family: 'Sarabun', sans-serif;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+}
+
+.NavLogo {
+    width: 100%;
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.NavLogo img {
+    width: 40px;
+}
+
+.NavLogoh img {
+    width: 40px;
+}
+
+.NavTitle {
+    color: #8699AD;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 12px 20px;
+    pointer-events: none;
+}
+
+.NavItem {
+    height: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.NavItem a, .NavItem div{
+    padding: 12px 20px;
+    cursor: pointer;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+}
+
+.HoverColor {
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.NavItem:hover .HoverColor, .NavItemh:hover .HoverColor, .NavItemDropdown:hover .HoverColor {
+    color: #FFF;
+}
+
+.NavItem span {
+    color: #A6B0CF;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.NavIcon {
+    color: #A6B0CF;
+    margin-right: 20px;
+    font-size: 16px;
+    min-width: 20px;
+    text-align: center;
+}
+
+.NavEnd {
+    margin: 0 5px 0 auto;
+    font-size: 12px;
+}
+
+.NavFinal {
+    margin-top: auto;
+    margin-bottom: 100px;
+}
+
+.NavItemDropdown a{
+    padding: 8px 60px;
+    cursor: pointer;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-decoration: none;
+}
+
+.NavItemDropdown span{
+    color: #79829c;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.NavActive {
+    background: rgb(47, 55, 74);
+}
+
+.NavActive span, .NavActive .NavIcon {
+    color: #FFF !important;
+}
+
+
+
+
+
+.Navbarh {
+    background: #2A3142;
+    width: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding-bottom: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow: visible;
+}
+
+.Navbarh::-webkit-scrollbar {
+    display: none;
+}
+
+.Navh {
+    height: 100%;
+}
+
+.NavMenuh {
+    list-style: none;
+    font-family: 'Sarabun', sans-serif;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+}
+
+.NavLogoh {
+    width: 100%;
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.NavItemh {
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.NavItemh:hover a, .NavItemh:hover div {
+    background: rgb(47, 55, 74);
+    padding: 15px 200px 15px 23px;
+}
+
+.NavItemh:hover span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.NavItemh a, .NavItemh div{
+    padding: 15px 0;
+    cursor: pointer;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.NavIconh {
+    color: #A6B0CF;
+    font-size: 20px;
+    min-width: 25px;
+    text-align: center;
+}
+
+.NavFinal {
+    margin-top: auto;
+    margin-bottom: 100px;
+}
+
+.NavItemh span {
+    position: absolute;
+    height: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    left: 90px;
+    display: none;
+    white-space: nowrap;
+}
+
+.Navmobile {
+    background: #2A3142;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.Navmobile a {
+    font-family: 'Sarabun', sans-serif;
+    color: #FFF;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin: 40px 0;
+}
+
+.Navmbtn {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 40px;
+    z-index: 101;
+    color: #FFF;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 1050px){
+    .Navmbtn {
+        display: block;
+    }
+    .Navbarh {
+        display: none;
+    }
+    .Navbar {
+        display: none;
+    }
+}

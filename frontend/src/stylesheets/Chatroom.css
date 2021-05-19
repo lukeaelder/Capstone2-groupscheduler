@@ -1,0 +1,61 @@
+.Chatroom {
+    text-align: center;
+}
+
+.videos-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    margin-bottom: 40px;
+}
+
+.roomidtext {
+    font-family: 'Sarabun', sans-serif;
+    letter-spacing: 1px;
+    color: #8a939c;
+    font-size: 14px;
+}
+
+.video {
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 800px){
+    .videos-section {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .partner-video {
+        width: 90%;
+    }
+    .user-video {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .partner-video {
+        width: 50%;
+    }
+    .user-video {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .partner-video {
+        width: 40%;
+    }
+    .user-video {
+        width: 40%;
+    }
+}

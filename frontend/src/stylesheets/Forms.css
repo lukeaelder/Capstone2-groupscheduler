@@ -1,0 +1,133 @@
+.form-100 {
+    width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+}
+
+.form-50 {
+    width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+}
+
+.form-input {
+    background: #2E3648;
+    padding: .375rem 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 1px solid #363e54;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    color: #9CA8B3;
+    border: 2px solid transparent;
+}
+
+.form-row label{
+    display: block;
+    color: #E9ECEF;
+    line-height: 1.5;
+    font-size: 14px;
+    margin: 8px 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.form {
+    width: 100%;
+}
+
+.form-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+
+.form-s {
+    width: 100%;
+    margin: 10px 20px 20px 20px;
+}
+
+.form-btn {
+    color: #FFF;
+    background: #626ED4;
+    border: none;
+    border-radius: 5px;
+    padding: .5rem 1.25rem;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 20px 0 10px 0px;
+    line-height: 1.5;
+    cursor: pointer;
+    -webkit-transition: 0.25s ease-out;
+    -o-transition: 0.25s ease-out;
+    transition: 0.25s ease-out;
+}
+
+.form-btn:hover {
+    background: #535eb4;
+}
+
+.text-link {
+    color: #626ED4;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.form-button-row {
+    display: block;
+}
+
+.form-subtext {
+    color: #E9ECEF;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.form-error {
+    color: #EC4561;
+    font-size: 14px;
+}
+
+.input-error {
+    border: 2px solid #EC4561;
+}
+
+@media screen and (min-width: 800px){
+    .form-50 {
+        width: 50%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+    }
+    .form-row .form-s:last-of-type {
+        width: 100%;
+        margin: 10px 0px 20px 20px;
+    }
+    
+    .form-row .form-s:first-of-type {
+        width: 100%;
+        margin: 10px 20px 20px 0px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .form-row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .form-s {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
