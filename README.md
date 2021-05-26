@@ -1,6 +1,19 @@
 # Group Scheduling App
 
+<table text-align="center">
+    <tr>
+        <td><img src="./images/form.png" alt="form screenshot"/></td>
+        <td><img src="./images/home.png" alt="homepage screenshot"/></td>
+    </tr>
+    <tr>
+        <td><img src="./images/group.png" alt="group page screenshot"/></td>
+        <td><img src="./images/videocall.png" alt="video call screenshot"/></td>
+    </tr>
+</table>
+
 Live Demo [c2-scheduler](https://c2-scheduler.surge.sh)
+
+---
 
 ## About the project
 
@@ -16,6 +29,8 @@ User features:
     * live group chat
 * Live 1 on 1 video calling
 
+---
+
 ## Technologies used
 
 * HTML
@@ -27,13 +42,17 @@ User features:
 * [ReactJS](https://reactjs.org)
 * [Node](https://nodejs.org)
 * [Express](https://expressjs.com)
-* [WebRTC](https://webrtc.org)
-* [Socket.io](https://socket.io)
-* [Simple-peer](https://github.com/feross/simple-peer)
 * [Bcrypt](https://www.npmjs.com/package/bcrypt)
 * [Uuid](https://www.npmjs.com/package/uuid)
 * [Shortid](https://www.npmjs.com/package/shortid)
 * [Jsonwebtoken](https://jwt.io)
+* [Socket.io](https://socket.io)
+    * Used for chat rooms and video call rooms
+* [WebRTC](https://webrtc.org)
+    * [WebRTC](https://webrtc.org) uses [Simple-peer](https://github.com/feross/simple-peer) to create connection id's of users which get sent to the [Socket.io](https://socket.io) connection, storing their id's in a room and connecting the 2 users to broadcast data between them creating a video call
+* [Simple-peer](https://github.com/feross/simple-peer)
+
+---
 
 ## Run a local version
 
