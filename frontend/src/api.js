@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = process.env.REACT_APP_BASE_URL || "http://localhost:5000";
+const BASE_URL = process.env.REACT_APP_BASE_URL || "http://localhost:5020";
 
 class SchedulerApi {
     static token;
@@ -25,6 +25,11 @@ class SchedulerApi {
 
     static async login(data) {
         let res = await this.request(`auth/login`, data, "post");
+        return res.token;
+    }
+
+    static async guestlogin() {
+        let res = await this.request(`auth/guestlogin`, null, "post");
         return res.token;
     }
 

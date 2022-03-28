@@ -4,7 +4,7 @@ require("dotenv").config();
 
 const SECRET_KEY = process.env.SECRET_KEY || "secret-key";
 
-const PORT = +process.env.PORT || 5000;
+const PORT = +process.env.PORT || 5020;
 
 const getDatabaseUri = () => {
     return (process.env.NODE_ENV === "test")

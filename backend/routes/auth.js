@@ -2,6 +2,7 @@
 
 const jsonschema = require("jsonschema");
 const express = require("express");
+const { faker } = require('@faker-js/faker');
 const router = new express.Router();
 
 const User = require("../models/user");
@@ -40,5 +41,23 @@ router.post("/signup", async (req, res, next) => {
         return next(err);
     }
 });
+
+router.post('/guestlogin', async (req, res, next) => {
+    try {
+        const user = faker.finance.account(10)
+        console.log(user)
+        const newUser = await User.signup({ 
+            first_name: "guest",
+            last_name: "user",
+            username: `guest-${user}`,
+            email: `guest-${user}@guestemail.com`,
+            password: "Password123" 
+        });
+        const token = createToken(newUser);
+        return res.status(201).json({ token });
+    } catch (err) {
+        return next(err);
+    }
+})
 
 module.exports = router;

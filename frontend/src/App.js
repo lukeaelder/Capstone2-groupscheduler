@@ -70,6 +70,16 @@ function App() {
     }
   }
 
+  const guestlogin = async () => {
+    try {
+      let token = await SchedulerApi.guestlogin();
+      setToken(token);
+      return { success: true};
+    } catch (err) {
+      return { success: false };
+    }
+  }
+
   const createGroup = async (inputData) => {
     try {
       await SchedulerApi.createGroup(inputData);
@@ -178,10 +188,10 @@ function App() {
             <div className="main-content">
               <Switch>
                 <LoggedOutRoute exact path="/signup">
-                  <Signup signup={signup}/>
+                  <Signup signup={signup} guestlogin={guestlogin}/>
                 </LoggedOutRoute>
                 <LoggedOutRoute exact path="/login">
-                  <Login login={login}/>
+                  <Login login={login} guestlogin={guestlogin}/>
                 </LoggedOutRoute>
                 <ProtectedRoute exact path="/dashboard">
                   <Dashboard/>

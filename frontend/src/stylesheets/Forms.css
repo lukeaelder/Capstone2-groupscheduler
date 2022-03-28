@@ -72,6 +72,15 @@
     background: #535eb4;
 }
 
+.form-guest {
+    margin-left: 10px;
+    background: #02a499;
+}
+
+.form-guest:hover {
+    background: #018a7f;
+}
+
 .text-link {
     color: #626ED4;
     font-weight: 500;

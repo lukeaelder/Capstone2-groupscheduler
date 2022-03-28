@@ -3,7 +3,7 @@ import { NavLink, useHistory } from 'react-router-dom';
 import "./stylesheets/Sections.css";
 import "./stylesheets/Forms.css";
 
-const Login = ({login}) => {
+const Login = ({login, guestlogin}) => {
     const history = useHistory();
 
     const [formData, setFormData] = useState({
@@ -32,6 +32,14 @@ const Login = ({login}) => {
                 history.push("/dashboard");
             } else {}
         }
+    }
+
+    const guestLogin = async (e) => {
+        e.preventDefault()
+        let res = await guestlogin();
+        if(res.success){
+            history.push("/dashboard");
+        } else {}
     }
 
     const validateLogin = () => {
@@ -90,7 +98,8 @@ const Login = ({login}) => {
                                     </div>
                                 </div> 
                                 <div className="form-row form-button-row">
-                                    <button type="submit" className="form-btn">Login</button><br/>
+                                    <button type="submit" className="form-btn">Login</button>
+                                    <button onClick={(e) => guestLogin(e)} className="form-btn form-guest">Continue As Guest</button><br/>
                                     <span className="form-subtext">
                                         Not signed up? <NavLink className="text-link" exact to="/signup">signup</NavLink>
                                     </span>
